@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-plugin-sass-icss",
+  "version": "1.0.0",
+  "description": "gatsby-plugin-sass clone that allows treating non-module sass files as icss",
+  "main": "index.js",
+  "repository": "https://github.com/iamthefox/gatsby-plugin-sass-icss",
+  "homepage": "https://github.com/iamthefox/gatsby-plugin-sass-icss",
+  "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "resolve-url-loader": "^3.1.2",
+    "sass-loader": "^10.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "autoprefixer": "^10.2.5",
+    "babel-preset-gatsby-package": "^1.7.0-next.1",
+    "cross-env": "^7.0.3",
+    "gatsby-plugin-utils": "^1.7.0-next.1"
+  },
+  "scripts": {
+    "build": "babel src --out-dir . --ignore \"**/__tests__\"",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore \"**/__tests__\""
+  },
+  "engines": {
+    "node": ">=12.13.0"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "sass"
+  ],
+  "author": "Alex Lisowski <me@iamthefox.com>",
+  "license": "MIT"
+}
