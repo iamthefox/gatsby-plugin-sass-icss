@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-sass-icss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "gatsby-plugin-sass clone that allows treating non-module sass files as icss",
   "main": "index.js",
   "repository": "https://github.com/iamthefox/gatsby-plugin-sass-icss",
